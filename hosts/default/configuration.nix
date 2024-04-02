@@ -49,6 +49,7 @@
   };
 
   hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   users.users.justin = {
     isNormalUser = true;
