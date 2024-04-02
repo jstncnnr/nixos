@@ -58,11 +58,19 @@
     shell = pkgs.zsh;
   };
 
+  users.users.work = {
+    isNormalUser = true;
+    description = "work";
+    extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.zsh;
+  };
+
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     useGlobalPkgs = true;
     users = {
       "justin" = import ../../config/personal/home.nix;
+      "work" = import ../../config/work/home.nix;
     };
   };
 
