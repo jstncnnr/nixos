@@ -35,6 +35,8 @@
 
     pkgs.spotify
     pkgs.google-chrome
+    pkgs.zoom-us
+    pkgs.citrix_workspace
 
     pkgs.cargo
     pkgs.rustc
